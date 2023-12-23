@@ -53,4 +53,10 @@ public class HomeController {
         empRepo.deleteById(id);
         return "redirect:/list";
     }
+    @GetMapping("/logout")
+    public String logout() {
+        // Add your logout logic here
+        // This is a simple example, you may need to clear the session or perform other actions
+        return "redirect:/"; // Redirect to your login page or another appropriate page
+    }
 }

@@ -236,6 +236,7 @@ input[type="submit"]:active
     </style>
 </head>
 <body>
+<a th:href="@{/logout}">Logout</a>
 
 <h2>Edit Employee</h2>
 <form action="#" th:action="@{'/update/' + ${emp.id}}" th:object="${emp}" method="post">
